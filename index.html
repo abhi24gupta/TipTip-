@@ -38,13 +38,13 @@
                   })
             },
             e:{
-                color :'#e7f6d9',
+                color :'##00ff7f',
                 sound :new Howl({
                     src: ['sounds/dotted-spiral.mp3']
                   })
             },
             f:{
-                color :'#d9f5f6',
+                color :'##fa8072',
                 sound :new Howl({
                     src: ['sounds/flash-1.mp3']
                   })
@@ -178,7 +178,7 @@
             {
                 var x= Math.floor( Math.random() * view.size.width );
                 var y=Math.floor(Math.random() * view.size.height );
-                var newcircle = new Path.Circle(new Point(x,y), 300);
+                var newcircle = new Path.Circle(new Point(x,y), 500);
                 newcircle.fillColor = keydata[event.key].color;
                 keydata[event.key].sound.play();
                 circles.push(newcircle);
